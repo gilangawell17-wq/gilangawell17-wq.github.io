@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>IT CENTER</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #14213d;
+
+            /*
+             * BACKGROUND
+             */
+            background-color: #f4f7fa;
+
+            background-image:
+                linear-gradient(
+                    135deg,
+                    transparent 0%,
+                    transparent 45%,
+                    rgba(255,255,255,0.8) 45%,
+                    rgba(255,255,255,0.8) 50%,
+                    transparent 50%
+                ),
+                linear-gradient(
+                    45deg,
+                    transparent 0%,
+                    transparent 45%,
+                    rgba(0,91,170,0.9) 45%,
+                    rgba(0,91,170,0.9) 50%,
+                    transparent 50%
+                );
+
+            background-size:
+                500px 500px,
+                600px 600px;
+
+            background-attachment: fixed;
+        }
+
+
+        /*
+         * KOTAK UTAMA
+         */
+
+        .container {
+
+            width: 90%;
+            max-width: 850px;
+
+            margin: 0 auto;
+
+            padding:
+                30px
+                20px
+                40px;
+
+            background:
+                rgba(255,255,255,0.88);
+
+            min-height: 100vh;
+        }
+
+
+        /*
+         * LOGO
+         */
+
+        .logo {
+
+            text-align: center;
+
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .logo img {
+
+            width: 170px;
+            height: 170px;
+
+            object-fit: contain;
+        }
+
+
+        /*
+         * NAMA IT
+         */
+
+        .nama {
+
+            text-align: center;
+
+            font-size: 38px;
+
+            font-weight: bold;
+
+            color: #0755a5;
+
+            margin-top: -5px;
+        }
+
+
+        .subnama {
+
+            text-align: center;
+
+            font-size: 21px;
+
+            color: #555;
+
+            margin-top: 5px;
+
+            margin-bottom: 25px;
+        }
+
+
+        /*
+         * NAVIGASI
+         */
+
+        nav {
+
+            width: 100%;
+
+            text-align: center;
+
+            margin:
+                20px
+                auto
+                30px;
+
+            font-size: 21px;
+        }
+
+
+        nav a {
+
+            color: #003da5;
+
+            font-weight: bold;
+
+            text-decoration: underline;
+        }
+
+
+        nav span {
+
+            margin:
+                0
+                15px;
+
+            color: #333;
+        }
+
+
+        /*
+         * GARIS
+         */
+
+        hr {
+
+            border: none;
+
+            border-top:
+                2px solid #3183c5;
+
+            margin:
+                20px
+                0
+                35px;
+        }
+
+
+        /*
+         * JUDUL
+         */
+
+        h1 {
+
+            text-align: center;
+
+            color: #0755a5;
+
+            font-size: 48px;
+
+            line-height: 1.2;
+
+            margin:
+                30px
+                0
+                25px;
+
+            font-weight: bold;
+        }
+
+
+        /*
+         * SLOGAN
+         */
+
+        .slogan {
+
+            text-align: center;
+
+            font-size: 23px;
+
+            font-style: italic;
+
+            line-height: 1.7;
+
+            margin:
+                25px
+                auto
+                40px;
+
+            max-width: 700px;
+        }
+
+
+        /*
+         * DESKRIPSI
+         */
+
+        .deskripsi {
+
+            border-top:
+                2px solid #3183c5;
+
+            padding-top: 25px;
+
+            font-size: 20px;
+
+            line-height: 1.8;
+
+            max-width: 700px;
+
+            margin:
+                0
+                auto;
+        }
+
+
+        /*
+         * HIGHLIGHT
+         */
+
+        mark {
+
+            background-color: #ffe600;
+
+            font-weight: bold;
+
+            padding:
+                2px
+                5px;
+        }
+
+
+        /*
+         * JUDUL MENU
+         */
+
+        h2 {
+
+            color: #0879c9;
+
+            font-size: 34px;
+
+            margin-top: 35px;
+
+            margin-bottom: 15px;
+        }
+
+
+        /*
+         * MENU
+         */
+
+        .menu {
+
+            font-size: 20px;
+
+            line-height: 1.8;
+
+            max-width: 700px;
+
+            margin:
+                0
+                auto;
+        }
+
+
+        .menu > li {
+
+            margin-bottom: 10px;
+
+            font-weight: bold;
+        }
+
+
+        .menu ul {
+
+            font-weight: normal;
+
+            margin-top: 0;
+        }
+
+
+        /*
+         * FOOTER
+         */
+
+        footer {
+
+            border-top:
+                2px solid #3183c5;
+
+            text-align: center;
+
+            color: #50627a;
+
+            font-size: 17px;
+
+            margin-top: 35px;
+
+            padding-top: 20px;
+        }
+
+
+        /*
+         * RESPONSIVE HP
+         */
+
+        @media (max-width: 600px) {
+
+            .container {
+
+                width: 94%;
+
+                padding:
+                    20px
+                    15px
+                    30px;
+            }
+
+
+            .logo img {
+
+                width: 150px;
+                height: 150px;
+            }
+
+
+            .nama {
+
+                font-size: 32px;
+            }
+
+
+            .subnama {
+
+                font-size: 18px;
+            }
+
+
+            nav {
+
+                font-size: 17px;
+
+                line-height: 1.8;
+            }
+
+
+            nav span {
+
+                margin:
+                    0
+                    7px;
+            }
+
+
+            h1 {
+
+                font-size: 38px;
+            }
+
+
+            .slogan {
+
+                font-size: 19px;
+            }
+
+
+            .deskripsi {
+
+                font-size: 18px;
+            }
+
+
+            h2 {
+
+                font-size: 29px;
+            }
+
+
+            .menu {
+
+                font-size: 18px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <!-- =========================
+             LOGO IT
+        ========================== -->
+
+        <div class="logo">
+
+            <img
+                src="logo.jpg"
+                alt="Logo IT">
+
+        </div>
+
+
+        <!-- =========================
+             NAMA
+        ========================== -->
+
+        <div class="nama">
+
+            IT
+
+        </div>
+
+
+        <div class="subnama">
+
+            Information Technology
+
+        </div>
+
+
+        <!-- =========================
+             NAVIGASI
+        ========================== -->
+
+<nav>
+    <a href="index.html">Beranda</a>
+    |
+    <a href="jadwal.htm">Jadwal Operasional</a> 
+</nav>
+
+
+        <hr>
+
+
+        <!-- =========================
+             JUDUL
+        ========================== -->
+
+        <h1>
+
+            Selamat Datang di
+            <br>
+            IT Campus
+
+        </h1>
+
+
+        <!-- =========================
+             SLOGAN
+        ========================== -->
+
+        <div class="slogan">
+
+            "Tempat terbaik untuk ngugas,
+            diskusi, dan menjemput inspirasi."
+
+        </div>
+
+
+        <!-- =========================
+             DESKRIPSI
+        ========================== -->
+
+        <div class="deskripsi">
+
+            Cafe Kopi didirikan sejak tahun 2026
+            untuk mendukung produktivitas mahasiswa
+            <b>Information Technology</b> dalam
+            menyelesaikan tugas coding.
+
+            Kami berkomitmen menyajikan racikan kopi
+            berkualitas tinggi namun tetap dengan
+
+            <mark>
+                harga yang sangat terjangkau
+            </mark>
+
+            bagi kantong mahasiswa IT.
+
+        </div>
+
+
+        <!-- =========================
+             MENU FAVORIT
+        ========================== -->
+
+        <h2>
+
+            Menu Favorit Kami
+
+        </h2>
+
+
+        <ul class="menu">
+
+
+            <li>
+
+                Minuman
+
+                <ul>
+
+                    <li>
+                        Kopi Susu Aren
+                    </li>
+
+                    <li>
+                        Green Tea Latte
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <li>
+
+                Makanan
+
+                <ul>
+
+                    <li>
+                        Roti Bakar Cokelat
+                    </li>
+
+                    <li>
+                        Kentang Goreng
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+        </ul>
+
+
+        <!-- =========================
+             FOOTER
+        ========================== -->
+
+        <footer>
+
+            Created by IT Campus @2026
+
+        </footer>
+
+
+    </div>
+
+
+</body>
+
+</html>

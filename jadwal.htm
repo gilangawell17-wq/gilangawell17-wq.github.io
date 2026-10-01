@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Jadwal Operasional</title>
+    
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef3f7;
+            color: #222;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 850px;
+            margin: auto;
+            padding: 25px 20px;
+            background-color: white;
+            min-height: 100vh;
+        }
+        
+        .logo {
+            text-align: center;
+        }
+        
+        .logo img {
+            width: 180px;
+            height: 180px;
+            object-fit: contain;
+        }
+        
+        .nama {
+            text-align: center;
+            color: #0755a5;
+            font-size: 38px;
+            font-weight: bold;
+        }
+        
+        .subnama {
+            text-align: center;
+            color: #555;
+            margin: 5px 0 25px;
+        }
+        
+        nav {
+            text-align: center;
+            margin: 20px 0 30px;
+            font-size: 20px;
+        }
+        
+        nav a {
+            color: blue;
+            text-decoration: underline;
+        }
+        
+        nav span {
+            margin: 0 10px;
+        }
+        
+        hr {
+            border: none;
+            border-top: 2px solid #3183c5;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #0755a5;
+            font-size: 40px;
+            font-weight: normal;
+            margin: 45px 0 35px;
+        }
+        
+        /* TABEL */
+        
+        .tabel-jadwal {
+            width: 100%;
+            max-width: 650px;
+            margin: auto;
+            border-collapse: collapse;
+            font-size: 20px;
+        }
+        
+        .tabel-jadwal th {
+            background-color: #0755a5;
+            color: white;
+            border: 1px solid black;
+            padding: 15px;
+        }
+        
+        .tabel-jadwal td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .tabel-jadwal tr:nth-child(even) {
+            background-color: #edf5fb;
+        }
+        
+        .keterangan {
+            text-align: left !important;
+            font-style: italic;
+            color: #555;
+        }
+        
+        footer {
+            text-align: center;
+            color: #777;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid #3183c5;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo IT">
+        </div>
+        
+        <!-- NAMA -->
+        <div class="nama">
+            IT
+        </div>
+        
+        <div class="subnama">
+            Information Technology
+        </div>
+        
+        <!-- NAVIGASI -->
+        <nav>
+            <a href="index.html">Beranda</a>
+            
+        </nav>
+        
+        <hr>
+        
+        <!-- JUDUL -->
+        <h1>
+            Jam Operasional Kedai
+        </h1>
+        
+        <!-- TABEL -->
+        <table class="tabel-jadwal">
+            
+            <tr>
+                <th>Hari</th>
+                <th>Jam Buka</th>
+            </tr>
+            
+            <tr>
+                <td>Senin - Jumat</td>
+                <td>09.00 - 22.00</td>
+            </tr>
+            
+            <tr>
+                <td>Sabtu - Minggu</td>
+                <td>10.00 - 24.00</td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" class="keterangan">
+                    Format waktu dalam WIB
+                </td>
+            </tr>
+            
+        </table>
+        
+        <!-- FOOTER -->
+        <footer>
+            Created by IT Campus @2026
+        </footer>
+        
+    </div>
+    
+</body>
+
+</html>
