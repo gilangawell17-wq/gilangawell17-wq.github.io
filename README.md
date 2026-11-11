@@ -1,1 +1,0 @@
-# gilangawell17-wq.github.io
